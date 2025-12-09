@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vebbox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+   
+
+        ul,
+        li {
+            display: inline;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            margin-left: 50%;
+        }
+
+        li a {
+            margin-right: 20px;
+        }
+        i{
+           color: rgb(6, 223, 239);; 
+        }
+
+        button {
+            background-color: lightblue;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .nav {
+            padding: 15px;
+            background-color: white;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            z-index: 1;
+
+        }
+
+        .nav img {
+            height: 44px;
+            width: 170px;
+            margin-left: 90px
+        }
+
+        a:hover {
+            color: red;
+        }
+         .row1 div:hover {
+            background-color: rgb(6, 223, 239);
+        }
+
+        .data div div:hover {
+            background-color:rgb(6, 223, 239);
+            color: white;
+        }
+
+        .data1 div div:hover {
+            background-color: rgb(6, 223, 239); 
+            color: white;
+        }
+
+
+        button:hover {
+            opacity: 0.5;
+        }
+        .head2{
+            position: relative;
+            animation-name: heroimg;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes heroimg{
+            0%{transform: translateY(0px);}
+            50%{ transform: translateY(30px);}
+            100%{ transform: translateY(0px);}
+        }
+
+        /* topic */
+
+
+        .head {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .head .head1 {
+            width: 30%;
+            margin-left: 100px;
+            margin-top: 60px;
+
+        }
+
+        .head .head2 {
+            margin-left: 15%;
+        }
+
+        /* sercices */
+        .services {
+            padding: 30px;
+        }
+
+        .row1 {
+            display: flex;
+            margin-top: 40px;
+            justify-content: center;
+
+        }
+
+        .row1 div {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            height: 300px;
+            width: 230px;
+            margin-left: 80px;
+            border-radius: 20px;
+            padding: 30px;
+            transition: 1s;
+
+        }
+
+       
+
+        i {
+            font-size: 40px;
+        }
+
+        /* services finesh */
+
+        .products {
+            margin-top: 40px;
+        }
+
+        .data {
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .data img {
+            height: 350px;
+            width: 600px;
+            margin: 60px;
+            border-radius: 20px;
+        }
+
+        .child1 {
+            position: absolute;
+            background-color: white;
+            padding: 20px;
+            height: 100px;
+            width: 500px;
+            border-radius: 20px;
+            left: 130px;
+            top: 240px;
+        }
+
+        .child2 {
+            position: absolute;
+            background-color: white;
+            padding: 20px;
+            height: 100px;
+            width: 500px;
+            border-radius: 20px;
+            right: 130px;
+            top: 240px;
+        }
+
+
+        .data1 {
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .data1 img {
+            height: 350px;
+            width: 600px;
+            margin: 60px;
+            border-radius: 20px;
+        }
+
+        .child3 {
+            position: absolute;
+            background-color: white;
+            padding: 20px;
+            height: 100px;
+            width: 500px;
+            border-radius: 20px;
+            left: 130px;
+            top: 240px;
+        }
+
+        .child4 {
+            position: absolute;
+            background-color: white;
+            padding: 20px;
+            height: 100px;
+            width: 500px;
+            border-radius: 20px;
+            right: 130px;
+            top: 240px;
+        }
+
+
+        /* products fineshed */
+        /* about us start */
+
+        .about {
+            display: flex;
+            justify-content: center;
+        }
+
+        .about1,
+        .about2 {
+            width: 600px;
+            height: 200px;
+            padding: 40px;
+            font-size: 20px;
+
+        }
+
+        .count {
+            display: flex;
+            justify-content: center;
+        }
+
+        .count1 {
+            display: grid;
+            grid-template-columns: auto auto;
+            padding: 60px;
+            width: 700px;
+        }
+
+        /* about us fineshed */
+        /* contact us  */
+
+        .contact {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 30px;
+
+        }
+
+        .contact1 {
+            width: 350px;
+
+        }
+
+        .contact2 {
+            width: 200px;
+        }
+
+        .contact3 input,
+        textarea {
+            width: 300px;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10PX 0px;
+
+        }
+
+        .contact3 button {
+            margin-left: 100px;
+            padding: 10px;
+
+        }
+
+        footer {
+            width: 100%;
+            padding: 30px;
+            background-color: white;
+            margin: 0px;
+            position: sticky;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+
+        footer p {
+            margin: 0px 140px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <img src="./LOGO.webp" alt="logo img">
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About us</a></li>
+        </ul>
+        <button>Get Started</button>
+    </div>
+
+    <!-- top finesh -->
+
+    <div class="head">
+
+        <div class="head1">
+            <h1 style="font-size: 50px;">Grow your business with VEBBOX</h1>
+            <p style="margin-top: 20px; font-size: 30px;">We are team of talented developers making Excellent Solutions
+                to business </p>
+            <button style="padding: 15px; margin: 40px 0px; width: 150px;">Get Started</button>
+        </div>
+
+        <div class="head2">
+            <img src="./hero-img.webp" alt="hero img">
+        </div>
+    </div>
+
+    <!-- text and img finesh -->
+
+
+    <div class="services">
+
+        <h1 style="text-align: center;">Services</h1>
+        <p style="text-align: center; font-size: 20px;">Our software development services</p>
+    </div>
+
+    <div class="row1">
+        <div>
+            <i class="fa-solid fa-earth-americas"></i>
+            <h3 style="padding: 0px 10px;">Custom Application Development Services</h3>
+            <p style="font-size: 20px; padding: 0px 10px;">We rely on our technological expertise and specialized
+                industry experience to develop any type of web, mobile, desktop, and hybrid app per your business
+                requirements.</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-earth-americas"></i>
+            <h3 style="padding: 0px 10px;">Custom Application Development Services</h3>
+            <p style="font-size: 20px; padding: 0px 10px;">We rely on our technological expertise and specialized
+                industry experience to develop any type of web, mobile, desktop, and hybrid app per your business
+                requirements.</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-earth-americas"></i>
+            <h3 style="padding: 0px 10px;">Custom Application Development Services</h3>
+            <p style="font-size: 20px; padding: 0px 10px;">We rely on our technological expertise and specialized
+                industry experience to develop any type of web, mobile, desktop, and hybrid app per your business
+                requirements.</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-earth-americas"></i>
+            <h3>Custom Application Development Services</h3>
+            <p style="font-size: 20px;">We rely on our technological expertise and specialized industry experience to
+                develop any type of web, mobile, desktop, and hybrid app per your business requirements.</p>
+        </div>
+    </div>
+
+    <div class="row1">
+        <div>
+            <i class="fa-solid fa-earth-americas"></i>
+            <h3 style="padding: 0px 10px;">IT Security Services</h3>
+            <p style="font-size: 20px; padding: 0px 10px;">Our thorough threat audits help us identify your software
+                infrastructure's most pressing vulnerabilities, allowing us to integrate the encryptions, security
+                services and access protocols you require</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-earth-americas"></i>
+            <h3 style="padding: 0px 10px;">Software Deployment Services</h3>
+            <p style="font-size: 20px; padding: 0px 10px;">Our implementation specialists will work with your IT team to
+                establish detailed software deployment objectives and timelines, covering configuration, testing,
+                project governance, troubleshooting and more.</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-earth-americas"></i>
+            <h3 style="padding: 0px 10px;">Data Backup and Recovery Services</h3>
+            <p style="font-size: 20px; padding: 0px 10px;">We implement robust data backup and recovery strategies for
+                cloud-based, on-premises and hybrid servers, designed to ensure the integrity of your data and the
+                continuity of your business.</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-earth-americas"></i>
+            <h3>Software Migration Services</h3>
+            <p style="font-size: 20px;">We perform cloud-based migrations, system upgrades and other vital software
+                modernization services prioritizing system uptime and data integrity throughout an often daunting IT
+                transition</p>
+        </div>
+    </div>
+
+
+    <!-- box model finesh -->
+
+    <div class="products">
+
+        <h1 style="text-align: center;">Products</h1>
+        <p style="text-align: center; font-size: 20px; margin-top: 10px;">People don't buy products, they buy solutions
+        </p>
+    </div>
+
+
+    <div class="data">
+
+        <div>
+            <img src="./Perfect Designer - Tech Innovation.jpg" alt="design img">
+            <div class="child1">
+                <h3 style="text-align: center;">Data Analyzer</h3>
+                <p>The systematic application of statistical and logical techniques to describe the data scope,
+                    modularize the data structure illustrate via images, tables, and graphs.</p>
+            </div>
+        </div>
+
+
+        <div>
+            <img src="./e-commerce.jpg" alt="e commers img">
+            <div class="child2">
+                <h3 style="text-align: center;">Websites</h3>
+                <p>We create a enhanced website, customers can easily access information about your business. They can
+                    see what products or services you sell, your prices, your location and much more.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="data1">
+
+        <div>
+            <img src="./c52d00ee-a2ab-496a-87cf-94fac9961a55.jpg" alt=" img">
+
+            <div class="child3">
+                <h3 style="text-align: center;">Industrial Trainings</h3>
+                <p>Our Industrial Training is to expose the students to actual working environment and enhance their
+                    knowledge and skill from what they have learned in the college.</p>
+                </p>
+            </div>
+        </div>
+
+
+        <div>
+            <img src="./Take Control of Your Finances with Smart Tech Tools!.jpg" alt="img">
+
+
+
+            <div class="child4">
+                <h3 style="text-align: center;">Billing Software</h3>
+                <p>A billing software can be any software designed to handle time and billing tracking as well as
+                    invoicing customers for services and products.
+            </div>
+        </div>
+
+    </div>
+
+    <!-- products finesh -->
+    <!-- about us start  -->
+
+
+
+    <h1 style="text-align: center;">About Us</h1>
+    <div class="about">
+        <div class="about1">
+            <p>We are consummate custom software Development company delivering splendid business IT Solutions and
+                related services to customers across the globe. Our development services are led by our dedicated and
+                passionate team to provide best industry practices combined with technology expertise and business
+                domain knowledge to drive digital transformation.</p>
+        </div>
+        <div class="about2">
+            <p>Our proficiency in understanding business challenges and professional competence allows us to create a
+                better experience for our customers. Our efforts focus on concept, design, development and
+                re-engineering of web businesses. We are working closely with software majors on new applications.
+
+            </p>
+        </div>
+    </div>
+
+    <div class="count">
+        <div>
+            <img src="./counts-img.svg" alt="count img" width="640px" height="290px">
+        </div>
+        <div class="count1">
+            <div>
+
+                <h1> <i class="fa-solid fa-face-smile"></i>25</h1>
+                <p><b>Happy Clients </b>A satisfied customer is the best bussiness goal.</p>
+            </div>
+            <div>
+
+                <h1><i class="fa-solid fa-print"></i>135</h1>
+                <p><b>Projects </b>we build projects with satisfied customers</p>
+            </div>
+            <div>
+
+                <h1><i class="fa-solid fa-clock"></i>12</h1>
+                <p><b>Working </b>Technologies We help enterprises accelerate adoption of new technologies, produce
+                    innovation.</p>
+            </div>
+            <div>
+
+                <h1> <i class="fa-solid fa-trophy"></i>25</h1>
+                <p><b>Developers</b> Our skilled technicians and engineers to implement the new technologies.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- about us fineshed  -->
+    <!-- contact us -->
+    <div>
+        <h1 style="text-align: center; padding: 20px; margin-top: 20px;">Contact Us</h1>
+    </div>
+    <div class="contact">
+        <div class="contact1">
+            <h1>VEBBOX</h1><br>
+            <p>Our mission is to enhance business growth of our customers with creative design, development and to
+                deliver
+                market defining high quality solutions that create value and reliable competitive advantage to customers
+                around the globe.</p><br>
+            <i class="fa-brands fa-twitter"></i><i class="fa-brands fa-facebook"></i><i
+                class="fa-brands fa-instagram"></i><i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="contact2">
+            <address><i class="fa-solid fa-location-dot"></i>72, Second floor, Kumbeswaran E St, South Street,
+                Kumbakonam, Tamil Nadu 612001 </address><br>
+            <address><i class="fa-solid fa-location-dot"></i>568, Kurinji Nagar, New housing unit, Thanjavur, 613 005.
+            </address><br>
+            <address>
+                <i class="fa-solid fa-location-dot"></i>87 first cross street,Yeshwanth
+                nagar,Madambakkam,Chennai-600126.
+
+            </address><br>
+
+        </div>
+        <div class="contact3">
+            <form>
+                <input type="text" placeholder="your name"><br>
+                <input type="text" placeholder="your email"> <br>
+                <input type="text" placeholder="subject"><br>
+                <textarea rows="10px" cols="42px" placeholder="message"></textarea><br>
+                <button>Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© Copyright <b>VEBBOX SOFTWARE SOLUTIONS</b>. All Rights Reserved</p>
+        <p>
+            Designed by vebbox software solutions
+        </p>
+    </footer>
+
+</body>
+
+</html>
